@@ -1,0 +1,79 @@
+.b-modal {
+  width: 30vw;
+  height: 50vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  padding: 1rem 0;
+
+  input,button {
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    button {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+    }
+  }
+  input[type='text'] {
+    text-align: center;
+  }
+  input[type="date"] {
+    width: 40%;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  &__customFile {
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+    .ok {
+      position: absolute;
+      bottom: -.5rem;
+      right: -.5rem;
+      width: 30px;
+      height: 30px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__addTodo {
+    width: 70%;
+    height: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    button {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+    }
+  }
+}
+
